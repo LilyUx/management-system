@@ -1,0 +1,87 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #171745;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .login-container {
+    margin-left: 50%;
+    margin-top: -1%;
+    box-sizing: border-box;
+    color: #fffffe;
+    background-color: rgba(0, 0, 0, 0.05);
+
+    .login-form {
+      .ant-form-item-label > label {
+        color: #fffffe;
+        font-size: 16px;
+      }
+      .ant-input {
+        background-color: transparent;
+        border: 0;
+        border-bottom: 1px solid #4a5174;
+        color: #fffffe;
+        &::-webkit-input-placeholder {
+          color: #c4d0e6;
+        }
+      }
+      .ant-form-item-control-input-content .ant-input-affix-wrapper {
+        background-color: transparent;
+        border: 0;
+        border-bottom: 1px solid #4a5174;
+        .ant-input {
+          background-color: transparent;
+          border: 0;
+          color: #fffffe;
+          outline: none;
+          &::-webkit-input-placeholder {
+            color: #c4d0e6;
+          }
+        }
+      }
+      .ant-input-password-icon {
+        color: #c4d0e6;
+      }
+      .ant-btn-primary {
+        padding: 0 40px;
+        height: 44px;
+        line-height: 44px;
+        margin: 10px 0;
+      }
+      .ant-form-item-label
+        > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+        display: none;
+      }
+    }
+  }
+  @media screen and (max-width: 1920px) {
+    .login-container {
+      width: 500px;
+      height: 696px;
+      padding: 80px;
+      .welcome {
+        width: 166px;
+      }
+      .title {
+        font-size: 20px;
+        line-height: 56px;
+      }
+    }
+  }
+  @media screen and (max-width: 1400px) {
+    .login-container {
+      width: 420px;
+      height: 562px;
+      padding: 60px;
+      .welcome {
+        width: 156px;
+      }
+      .title {
+        font-size: 18px;
+        line-height: 48px;
+      }
+    }
+  }
+}

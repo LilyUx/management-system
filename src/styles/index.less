@@ -1,0 +1,55 @@
+html {
+  background-color: #11122c;
+  --antd-wave-shadow-color: #3a6fff;
+  --scroll-bar: 0;
+  /*整個滾動條*/
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background-color: transparent;
+  }
+  /*定義滾動條軌道*/
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  /*定義滑塊*/
+  ::-webkit-scrollbar-thumb {
+    background-color: #a7b1c2;
+    border-radius: 4px;
+  }
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+a {
+  color: #434850;
+}
+
+a:hover {
+  color: #3a6fff;
+}
+
+a:visited {
+  color: #434850;
+}
+
+.drop-item-disable {
+  cursor: not-allowed !important;
+  span,
+  svg {
+    color: @disable-color !important;
+  }
+}
